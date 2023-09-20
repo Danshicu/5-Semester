@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 using Laba1;
 
-PasswordController controller = new PasswordController(4);
-controller.AnalyzeCharsDistribution();
-controller.AnalyseTimeToTakePassword();
+// PasswordController controller = new PasswordController(4);
+// controller.AnalyzeCharsDistribution();
+// controller.AnalyseTimeToTakePassword();
 
 
 
@@ -14,38 +16,29 @@ namespace Laba1
     public class PasswordController
     {
         
-        private int _passwordLength;
         public string? Password { get; private set; }
-
-        public PasswordController(int length)
-        {
-            _passwordLength = length;
-            GeneratePassword();
-        }
+        public ulong AttemptsToTakePassword { get; private set; }
         
-        public void GeneratePassword()
+        public void GeneratePassword(int length)
         {
-            Password = PasswordGenerator.GeneratePasswordWithLength(_passwordLength);
-            Console.WriteLine(Password);
+            Password = PasswordGenerator.GeneratePasswordWithLength(length);
         }
 
-        public void AnalyzeCharsDistribution()
+        public Dictionary<char, int> AnalyzeCharsDistribution()
         {
-            PasswordAnalizer.AnalyzeCharsDistribution(Password);
+            return PasswordAnalizer.AnalyzeCharsDistribution(Password);
         }
 
-        public void AnalyseTimeToTakePassword()
+        public async Task AnalyseTimeToTakePassword(Stopwatch stopwatch)
         {
-            DateTime startTime = DateTime.Now;
-            int attempts = 0;
+            AttemptsToTakePassword = 0;
             string? generatedString = null;
             while (generatedString != Password)
             {
-                generatedString = PasswordGenerator.GeneratePasswordWithLength(_passwordLength);
-                attempts++;
+                generatedString = PasswordGenerator.GeneratePasswordWithLength(Password.Length);
+                AttemptsToTakePassword++;
             }
-            Console.WriteLine(DateTime.Now - startTime);
-            Console.WriteLine(attempts);
+            stopwatch.Stop();
         }
         
         public static class PasswordGenerator
@@ -70,7 +63,7 @@ namespace Laba1
         public static class PasswordAnalizer
         {
             
-            public static void AnalyzeCharsDistribution(string password)
+            public static Dictionary<char, int> AnalyzeCharsDistribution(string password)
             {
                 Dictionary<char, int> chars = new Dictionary<char, int>();
 
@@ -83,11 +76,7 @@ namespace Laba1
                     }
                     else chars.Add(currentChar, 1);
                 }
-
-                foreach (var pair in chars)
-                {
-                    Console.WriteLine($"\n{pair.Key} : {pair.Value}");
-                }
+                return chars;
             }
         }
     

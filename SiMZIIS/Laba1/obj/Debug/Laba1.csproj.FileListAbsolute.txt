@@ -1,0 +1,14 @@
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\bin\Debug\Laba1.exe.config
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\bin\Debug\Laba1.exe
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\bin\Debug\Laba1.pdb
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\bin\Debug\System.Drawing.Common.dll
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.csproj.AssemblyReference.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.csproj.SuggestedBindingRedirects.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.Properties.Resources.resources
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.csproj.GenerateResource.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.csproj.CoreCompileInputs.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.csproj.CopyComplete
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.exe
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.pdb
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.FirstTask.resources
+D:\RiderProj\5-Semester\SiMZIIS\Laba1\obj\Debug\Laba1.SecondTask.resources
