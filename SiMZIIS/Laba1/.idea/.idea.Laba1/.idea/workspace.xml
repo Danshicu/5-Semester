@@ -8,54 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="406a5f96-0e07-431e-b0fa-32b42a141de3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SecondTask.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiagramDrower.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Laba1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laba1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Laba1.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FirstTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0-windows/Laba1.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0-windows/Laba1.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/App.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1.g.resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_2j4dgxy1_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_2m3odtzj_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_3rci1fzn_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_5byrm5kv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_5w0brydw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_MarkupCompile.lref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_ayqyf1m2_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_duzm0tag_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_ei5zrxik_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_exzfanhp_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_gmisymul_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_ifb2ilus_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_lg5mr5ra_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_nekq0dmx_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_o2dzkyeo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_o4ro2pqj_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_ok5sncey_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_q3k0p3e4_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_r1002gwr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_uokebmyr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/Laba1_zplgtjcf_wpftmp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/MainWindow.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0-windows/MainWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Laba1.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Laba1.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Laba1.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondTask.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +23,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1175e77e945b418ebce4dea98d1883fd5b6520/19/33406bb6/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1175e77e945b418ebce4dea98d1883fd5b6520/d7/959a995c/TextBoxBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/206ca650b3064accb5daca7a0cab0e2017a718/d8/692153f9/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/15/9963924f/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/1a/ca6be5e4/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/24/94280e20/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/2a/cb94a98c/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/71/4c7f37e6/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/211b6fdc/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/55be5c43/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/81/316ec78a/UnwrapPromise`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/82/f46ce0df/ExecutionContextSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/8a/d41173a3/ThreadPoolWorkQueue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Laba12/DiagramDrower.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Laba12/PasswordController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/8d/fe9e9710/AsyncVoidMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/d1/265e6b98/Thread.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -84,28 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.7070485&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.6493656",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Dansh\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Dansh\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Dansh\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Dansh\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Dansh\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\Dansh\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Laba1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -142,6 +107,9 @@
       <workItem from="1695203145257" duration="2544000" />
       <workItem from="1695206435492" duration="134000" />
       <workItem from="1695226330174" duration="12705000" />
+      <workItem from="1695289093361" duration="10454000" />
+      <workItem from="1695302207434" duration="2799000" />
+      <workItem from="1695321387694" duration="6166000" />
     </task>
     <servers />
   </component>
@@ -150,5 +118,89 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>44</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="39" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
+            <startOffsets>
+              <option value="1260" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1336" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>50</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="46" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
+            <startOffsets>
+              <option value="1622" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1653" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>28</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="28" containingFunctionPresentation="Method 'CountAverageForLength'">
+            <startOffsets>
+              <option value="823" />
+            </startOffsets>
+            <endOffsets>
+              <option value="851" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>27</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="27" containingFunctionPresentation="Method 'CountAverageForLength'">
+            <startOffsets>
+              <option value="758" />
+            </startOffsets>
+            <endOffsets>
+              <option value="810" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>58</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="55" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="1968" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2092" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>31</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="31" containingFunctionPresentation="Method 'CountAverageForLength'">
+            <startOffsets>
+              <option value="871" />
+            </startOffsets>
+            <endOffsets>
+              <option value="906" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

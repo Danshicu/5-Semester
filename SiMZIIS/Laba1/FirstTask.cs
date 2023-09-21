@@ -78,7 +78,7 @@ namespace Laba1
             {
                 AnalyzeTimeButton.Enabled = false;
                 stopwatch.Restart();
-                Task.Run(() => controller.AnalyseTimeToTakePassword(stopwatch));
+                Task.Run(() => controller.AnalyseTimeToTakePasswordAsync(stopwatch));
                 Task.Run(() => UpdateTimeOfPasswordCrack(stopwatch));
             }
         }

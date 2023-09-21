@@ -7,7 +7,7 @@ using Laba1;
 
 // PasswordController controller = new PasswordController(4);
 // controller.AnalyzeCharsDistribution();
-// controller.AnalyseTimeToTakePassword();
+// controller.AnalyseTimeToTakePasswordAsync();
 
 
 
@@ -29,7 +29,7 @@ namespace Laba1
             return PasswordAnalizer.AnalyzeCharsDistribution(Password);
         }
 
-        public async Task AnalyseTimeToTakePassword(Stopwatch stopwatch)
+        public async Task AnalyseTimeToTakePasswordAsync(Stopwatch stopwatch)
         {
             AttemptsToTakePassword = 0;
             string? generatedString = null;
@@ -39,6 +39,19 @@ namespace Laba1
                 AttemptsToTakePassword++;
             }
             stopwatch.Stop();
+        }
+
+        public Stopwatch AnalyseTimeToTakePasswordSync(Stopwatch stopwatch)
+        {
+            AttemptsToTakePassword = 0;
+            string? generatedString = null;
+            while (generatedString != Password)
+            {
+                generatedString = PasswordGenerator.GeneratePasswordWithLength(Password.Length);
+                AttemptsToTakePassword++;
+            }
+            stopwatch.Stop();
+            return stopwatch;
         }
         
         public static class PasswordGenerator
