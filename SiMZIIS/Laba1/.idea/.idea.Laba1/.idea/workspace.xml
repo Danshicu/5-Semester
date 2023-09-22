@@ -9,9 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="406a5f96-0e07-431e-b0fa-32b42a141de3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FirstTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondTask.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1695226330174" duration="12705000" />
       <workItem from="1695289093361" duration="10454000" />
       <workItem from="1695302207434" duration="2799000" />
-      <workItem from="1695321387694" duration="6166000" />
+      <workItem from="1695321387694" duration="8805000" />
     </task>
     <servers />
   </component>
@@ -127,10 +125,10 @@
           <line>44</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="39" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
             <startOffsets>
-              <option value="1260" />
+              <option value="1264" />
             </startOffsets>
             <endOffsets>
-              <option value="1336" />
+              <option value="1340" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />
@@ -140,10 +138,10 @@
           <line>50</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="46" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
             <startOffsets>
-              <option value="1622" />
+              <option value="1626" />
             </startOffsets>
             <endOffsets>
-              <option value="1653" />
+              <option value="1657" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="31" />
@@ -153,10 +151,10 @@
           <line>28</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="28" containingFunctionPresentation="Method 'CountAverageForLength'">
             <startOffsets>
-              <option value="823" />
+              <option value="827" />
             </startOffsets>
             <endOffsets>
-              <option value="851" />
+              <option value="855" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="33" />
@@ -166,36 +164,23 @@
           <line>27</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="27" containingFunctionPresentation="Method 'CountAverageForLength'">
             <startOffsets>
-              <option value="758" />
+              <option value="762" />
             </startOffsets>
             <endOffsets>
-              <option value="810" />
+              <option value="814" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>58</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="55" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1968" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2092" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
           <line>31</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="31" containingFunctionPresentation="Method 'CountAverageForLength'">
             <startOffsets>
-              <option value="871" />
+              <option value="875" />
             </startOffsets>
             <endOffsets>
-              <option value="906" />
+              <option value="910" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="36" />

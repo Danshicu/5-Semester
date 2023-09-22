@@ -20,7 +20,7 @@ public partial class SecondTask : Form
     private void CountAverageForLength(int length)
     {
         Console.WriteLine(DateTime.Now.TimeOfDay.ToString());
-        Task[] tasks = new Task[2];
+        Thread[] tasks = new Thread[2];
         List<TimeSpan> times = new List<TimeSpan>();
         PasswordTakingTimeHandler handler = new PasswordTakingTimeHandler(times, length);
         for (int numberOfTask = 0; numberOfTask < tasks.Length; numberOfTask++)
@@ -53,11 +53,24 @@ public partial class SecondTask : Form
         Console.WriteLine($"Counted {name} with time {timeSpan.ToString()} At : {DateTime.Now.TimeOfDay.ToString()}");
     }
 
-    private Task Create(int numberOfTask, PasswordTakingTimeHandler handler)
+    private Thread Create(int numberOfTask, PasswordTakingTimeHandler handler)
     {
+        long startTime = DateTime.Now.Ticks;
         Console.WriteLine($"Task number {numberOfTask + 1} started from start method");
-        Task newTask = new Task(() =>
-                 CountAndAddTimeOfTakingPassword(handler, $"Task number {numberOfTask + 1}"));
+        //Thread newTask = new Thread(() =>
+                 //CountAndAddTimeOfTakingPassword(handler, $"Task number {numberOfTask + 1}"));
+                 Thread newTask = new Thread(() =>
+                     {
+                         for (int i = 0; i < 1000000000; i++)
+                         {
+                             if (i == 999999999)
+                             {
+                                 Console.WriteLine("SOMEINFO");
+                             }
+                         }
+                         handler.spanList.Add(new TimeSpan(DateTime.Now.Ticks - startTime));
+                     }
+                 );
         return newTask;
     }
 

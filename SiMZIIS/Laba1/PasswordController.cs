@@ -5,11 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Laba1;
 
-// PasswordController controller = new PasswordController(4);
-// controller.AnalyzeCharsDistribution();
-// controller.AnalyseTimeToTakePasswordAsync();
-
-
 
 namespace Laba1
 {
@@ -60,11 +55,12 @@ namespace Laba1
             private static string _validSymbols = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя0123456789";
             private static Random _rand = new Random();
             private static char GetRandomSymbol => _validSymbols[_rand.Next(_validSymbols.Length)];
+            private static StringBuilder builder = new StringBuilder();
             
 
             public static string? GeneratePasswordWithLength(int length)
             {
-                StringBuilder builder = new StringBuilder(length);
+                builder.Clear();
                 for (int index = 0; index < length; index++)
                 {
                     builder.AppendFormat($"{GetRandomSymbol}");
