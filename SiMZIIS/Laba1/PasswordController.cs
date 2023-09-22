@@ -24,7 +24,7 @@ namespace Laba1
             return PasswordAnalizer.AnalyzeCharsDistribution(Password);
         }
 
-        public async Task AnalyseTimeToTakePasswordAsync(Stopwatch stopwatch)
+        public void AnalyseTimeToTakePasswordAsync(Stopwatch stopwatch)
         {
             AttemptsToTakePassword = 0;
             string? generatedString = null;
@@ -63,7 +63,7 @@ namespace Laba1
                 builder.Clear();
                 for (int index = 0; index < length; index++)
                 {
-                    builder.AppendFormat($"{GetRandomSymbol}");
+                    builder.AppendFormat(GetRandomSymbol.ToString());
                 }
                 return builder.ToString();
             }

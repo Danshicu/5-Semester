@@ -59,13 +59,13 @@ namespace Laba1
             }
         }
 
-        private async Task UpdateTimeOfPasswordCrack(Stopwatch stopwatch)
+        private void UpdateTimeOfPasswordCrack(Stopwatch stopwatch)
         {
             GeneratePasswordButton.Enabled = false;
             while (stopwatch.IsRunning)
             {
-                TimeToTakePasswordBox.Text = $"{stopwatch.Elapsed.ToString()} " +
-                                             $"{Environment.NewLine} {controller.AttemptsToTakePassword} attempts";
+                TimeToTakePasswordBox.Text = stopwatch.Elapsed +
+                Environment.NewLine + controller.AttemptsToTakePassword + @" attempts";
             }
             GeneratePasswordButton.Enabled = true;
             AnalyzeTimeButton.Enabled = true;

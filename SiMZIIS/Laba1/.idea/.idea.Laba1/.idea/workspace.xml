@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="406a5f96-0e07-431e-b0fa-32b42a141de3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FirstTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
     </list>
@@ -28,6 +29,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/1a/ca6be5e4/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/24/94280e20/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/2a/cb94a98c/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/3f/046fb0b3/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/71/4c7f37e6/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/211b6fdc/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/55be5c43/Task.cs" root0="SKIP_HIGHLIGHTING" />
@@ -51,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.6493656",
+    "XThreadsFramesViewSplitterKey": "0.9592326",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -121,69 +123,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>44</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="39" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
+          <url>file://$PROJECT_DIR$/FirstTask.cs</url>
+          <line>75</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\FirstTask.cs" initialLine="75" containingFunctionPresentation="Method 'AnalyzeTimeButton_Click'">
             <startOffsets>
-              <option value="1264" />
+              <option value="2558" />
             </startOffsets>
             <endOffsets>
-              <option value="1340" />
+              <option value="2559" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>50</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="46" containingFunctionPresentation="Method 'CountAndAddTimeOfTakingPassword'">
+          <url>file://$PROJECT_DIR$/FirstTask.cs</url>
+          <line>76</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\FirstTask.cs" initialLine="76" containingFunctionPresentation="Method 'AnalyzeTimeButton_Click'">
             <startOffsets>
-              <option value="1626" />
+              <option value="2572" />
             </startOffsets>
             <endOffsets>
-              <option value="1657" />
+              <option value="2619" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>28</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="28" containingFunctionPresentation="Method 'CountAverageForLength'">
-            <startOffsets>
-              <option value="827" />
-            </startOffsets>
-            <endOffsets>
-              <option value="855" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>27</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="27" containingFunctionPresentation="Method 'CountAverageForLength'">
-            <startOffsets>
-              <option value="762" />
-            </startOffsets>
-            <endOffsets>
-              <option value="814" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
-          <line>31</line>
-          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="31" containingFunctionPresentation="Method 'CountAverageForLength'">
-            <startOffsets>
-              <option value="875" />
-            </startOffsets>
-            <endOffsets>
-              <option value="910" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
