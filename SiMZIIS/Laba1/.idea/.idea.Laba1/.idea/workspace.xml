@@ -9,7 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="406a5f96-0e07-431e-b0fa-32b42a141de3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FirstTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
     </list>
@@ -53,7 +52,6 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.9592326",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -110,6 +108,7 @@
       <workItem from="1695289093361" duration="10454000" />
       <workItem from="1695302207434" duration="2799000" />
       <workItem from="1695321387694" duration="8805000" />
+      <workItem from="1696014624664" duration="5955000" />
     </task>
     <servers />
   </component>

@@ -36,8 +36,9 @@ namespace Laba1
             stopwatch.Stop();
         }
 
-        public Stopwatch AnalyseTimeToTakePasswordSync(Stopwatch stopwatch)
+        public Stopwatch AnalyseTimeToTakePasswordSync()
         {
+            Stopwatch stopwatch = Stopwatch.StartNew();
             AttemptsToTakePassword = 0;
             string? generatedString = null;
             while (generatedString != Password)
