@@ -12,6 +12,7 @@ namespace Laba1;
 public partial class SecondTask : Form
 {
     private Object _lock = new Object();
+    private int passwordMaxLength;
     Task[] tasks = new Task[5];
     public SecondTask()
     {
@@ -20,28 +21,22 @@ public partial class SecondTask : Form
 
     private void CountAverageForLength(int length)
     {
-        //tasks.Clear();
-        Console.WriteLine(DateTime.Now.TimeOfDay.ToString());
         List<TimeSpan> spanList = new List<TimeSpan>();
         PasswordTakingTimeHandler handler = new PasswordTakingTimeHandler(ref spanList, length);
-        for(int index=0; index<5; index++)
+        for(int index=0; index<tasks.Length; index++)
         {
             tasks[index] = Task.Factory.StartNew(() => CalculateTimeForHandler(handler));
             Thread.Sleep(10);
         }
 
-        Task.Factory.ContinueWhenAll(tasks, consoleLog => Console.WriteLine($"Average is :{AverageTime(spanList)}"));
-        
+        Task.Factory.ContinueWhenAll(tasks, AddPoint => AddPointToChart(AverageTime(spanList), length));
     }
 
     private void CalculateTimeForHandler(PasswordTakingTimeHandler handler)
     {
-        Console.WriteLine("Created controller");
         PasswordController controller = new PasswordController();
         Random _rand = new Random();
         controller.GeneratePassword(handler.passwordLength, ref _rand);
-        Console.WriteLine(controller.Password);
-        Console.WriteLine("Want to get controller");
         var timer = controller.AnalyseTimeToTakePasswordSync(ref _rand);
         lock (_lock)
         {
@@ -73,7 +68,51 @@ public partial class SecondTask : Form
 
     private void GenerateChartButton_Click(object sender, EventArgs e)
     {
-        CountAverageForLength(4);
-        Console.WriteLine("Some Info");
+        var isCorrect = int.TryParse(PasswordLengthBox.Text, out int length);
+        if (isCorrect)
+        {
+            passwordMaxLength = length;
+            GenerateChartButton.Enabled = false;
+            PasswordLengthBox.Enabled = false;
+            AverageTimeChart.Series["Time to take password"].Points.Clear();
+            for (int i = 1; i <= length; i++)
+            {
+                CountAverageForLength(i);
+            }
+        }
+        
+    }
+
+    private void CheckPointsCount()
+    {
+        if (AverageTimeChart.Series["Time to take password"].Points.Count == passwordMaxLength)
+        {
+            GenerateChartButton.Enabled = true;
+            PasswordLengthBox.Enabled = true;
+        }
+        
+    }
+
+    private void AddPointToChart(TimeSpan span, int length)
+    {
+        Console.WriteLine($"{span.ToString()} : {length}");
+        AverageTimeChart.Series["Time to take password"].Points.AddY(span.Ticks);
+        AverageTimeChart.Series["Time to take password"].Points[length - 1].Name = span.ToString();
+        AverageTimeChart.Series["Time to take password"].Points[length-1].AxisLabel = length.ToString();
+        CheckPointsCount();
+    }
+    
+    private void FlashInputPasswordLengthBox(object sender, EventArgs e)
+    {
+        PasswordLengthBox.Text = "";
+    }
+
+    private void CheckForInput(object sender, EventArgs e)
+    {
+        var isNumber = int.TryParse(PasswordLengthBox.Text, out _);
+        if (!isNumber)
+        {
+            PasswordLengthBox.Text = "Input password length";
+        }
     }
 }

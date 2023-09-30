@@ -52,7 +52,6 @@ namespace Laba1
                 AttemptsToTakePassword++;
             }
             stopwatch.Stop();
-            Console.WriteLine(Task.CurrentId);
             return stopwatch;
         }
         
