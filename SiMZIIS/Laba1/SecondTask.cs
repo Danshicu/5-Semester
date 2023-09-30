@@ -11,7 +11,8 @@ namespace Laba1;
 
 public partial class SecondTask : Form
 {
-    List<Task<Stopwatch>> tasks = new List<Task<Stopwatch>>();
+    private Object _lock = new Object();
+    Task[] tasks = new Task[5];
     public SecondTask()
     {
         InitializeComponent();
@@ -19,29 +20,33 @@ public partial class SecondTask : Form
 
     private void CountAverageForLength(int length)
     {
-        tasks.Clear();
+        //tasks.Clear();
         Console.WriteLine(DateTime.Now.TimeOfDay.ToString());
         List<TimeSpan> spanList = new List<TimeSpan>();
         PasswordTakingTimeHandler handler = new PasswordTakingTimeHandler(ref spanList, length);
         for(int index=0; index<5; index++)
         {
-            tasks.Add(CalculateTimeForHandler(handler));
-            tasks[index].RunSynchronously();
-            tasks[index].ContinueWith(span =>
-            {
-                spanList.Add(span.Result.Elapsed);
-            });
+            tasks[index] = Task.Factory.StartNew(() => CalculateTimeForHandler(handler));
+            Thread.Sleep(10);
         }
-        
-        Console.WriteLine($"Average is :{AverageTime(spanList)}");
 
+        Task.Factory.ContinueWhenAll(tasks, consoleLog => Console.WriteLine($"Average is :{AverageTime(spanList)}"));
+        
     }
 
-    private Task<Stopwatch> CalculateTimeForHandler(PasswordTakingTimeHandler handler)
+    private void CalculateTimeForHandler(PasswordTakingTimeHandler handler)
     {
+        Console.WriteLine("Created controller");
         PasswordController controller = new PasswordController();
-        controller.GeneratePassword(handler.passwordLength);
-        return new Task<Stopwatch>(() =>controller.AnalyseTimeToTakePasswordSync());
+        Random _rand = new Random();
+        controller.GeneratePassword(handler.passwordLength, ref _rand);
+        Console.WriteLine(controller.Password);
+        Console.WriteLine("Want to get controller");
+        var timer = controller.AnalyseTimeToTakePasswordSync(ref _rand);
+        lock (_lock)
+        {
+            handler.spanList.Add(timer.Elapsed);
+        }
     }
 
     public static TimeSpan AverageTime(IEnumerable<TimeSpan> spans)
@@ -68,7 +73,7 @@ public partial class SecondTask : Form
 
     private void GenerateChartButton_Click(object sender, EventArgs e)
     {
-        CountAverageForLength(3);
+        CountAverageForLength(4);
         Console.WriteLine("Some Info");
     }
 }

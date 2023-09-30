@@ -53,7 +53,8 @@ namespace Laba1
             var isCorrect = int.TryParse(InputPasswordLengthBox.Text, out int length);
             if (isCorrect)
             {
-                controller.GeneratePassword(length);
+                Random _rand = new Random();
+                controller.GeneratePassword(length, ref _rand);
                 GeneratedPasswordBox.Text = controller.Password;
                 GenerateDistributionBar(controller.AnalyzeCharsDistribution());
             }

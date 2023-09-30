@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="406a5f96-0e07-431e-b0fa-32b42a141de3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FirstTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PasswordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.cs" afterDir="false" />
     </list>
@@ -29,6 +30,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/24/94280e20/StringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/2a/cb94a98c/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/3f/046fb0b3/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/5d/c9f2adec/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/71/4c7f37e6/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/211b6fdc/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/7d/55be5c43/Task.cs" root0="SKIP_HIGHLIGHTING" />
@@ -36,7 +38,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/82/f46ce0df/ExecutionContextSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/8a/d41173a3/ThreadPoolWorkQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/8d/fe9e9710/AsyncVoidMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/ae/24e2de06/StandardTaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/d1/265e6b98/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/d5/dc6a6199/AppDomain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/d9/e53f8479/Environment.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -108,7 +113,7 @@
       <workItem from="1695289093361" duration="10454000" />
       <workItem from="1695302207434" duration="2799000" />
       <workItem from="1695321387694" duration="8805000" />
-      <workItem from="1696014624664" duration="5955000" />
+      <workItem from="1696014624664" duration="17981000" />
     </task>
     <servers />
   </component>
@@ -123,29 +128,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/FirstTask.cs</url>
-          <line>75</line>
+          <line>76</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\FirstTask.cs" initialLine="75" containingFunctionPresentation="Method 'AnalyzeTimeButton_Click'">
             <startOffsets>
-              <option value="2558" />
+              <option value="2614" />
             </startOffsets>
             <endOffsets>
-              <option value="2559" />
+              <option value="2615" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/FirstTask.cs</url>
-          <line>76</line>
+          <line>77</line>
           <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\FirstTask.cs" initialLine="76" containingFunctionPresentation="Method 'AnalyzeTimeButton_Click'">
             <startOffsets>
-              <option value="2572" />
+              <option value="2628" />
             </startOffsets>
             <endOffsets>
-              <option value="2619" />
+              <option value="2675" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>46</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="46" containingFunctionPresentation="Method 'CalculateTimeForHandler'">
+            <startOffsets>
+              <option value="1534" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1570" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SecondTask.cs</url>
+          <line>47</line>
+          <properties documentPath="D:\RiderProj\5-Semester\SiMZIIS\Laba1\SecondTask.cs" initialLine="47" containingFunctionPresentation="Method 'CalculateTimeForHandler'">
+            <startOffsets>
+              <option value="1579" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1580" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
