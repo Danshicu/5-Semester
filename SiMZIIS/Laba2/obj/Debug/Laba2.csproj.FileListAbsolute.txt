@@ -1,0 +1,11 @@
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\bin\Debug\Laba2.exe.config
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\bin\Debug\Laba2.exe
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\bin\Debug\Laba2.pdb
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.csproj.AssemblyReference.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.csproj.SuggestedBindingRedirects.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.Properties.Resources.resources
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.csproj.GenerateResource.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.csproj.CoreCompileInputs.cache
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.exe
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.pdb
+D:\RiderProj\5-Semester\SiMZIIS\Laba2\obj\Debug\Laba2.Form1.resources
