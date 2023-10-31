@@ -27,19 +27,11 @@ namespace Laba3
                 rng.GetBytes(iv);
             }
         }
-
-        // private void CypherModeBox_SelectedIndexChanged(object sender, EventArgs e)
-        // {
-        //     throw new System.NotImplementedException();
-        // }
-        private void InputPictureBox_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        
         private void EncryptButton_Click(object sender, EventArgs e)
         {
-            EncryptedPictureBox.Image = CryptoCipher.GetImage(CryptoCipher.MakeEncryption(imagePath, (CipherMode)CipherModeBox.SelectedItem, key, iv));
+            CryptoCipher.MakeEncryption(imagePath, (CipherMode)CipherModeBox.SelectedItem, key, iv);
+            EncryptedPictureBox.Image = CryptoCipher.GetImage("outFile.bmp");
         }
 
         private void InputPictureBox_DragEnter(object sender, DragEventArgs e)
@@ -59,6 +51,18 @@ namespace Laba3
         private void InputPictureBox_DragDrop(object sender, DragEventArgs e)
         {
             e.Effect = DragDropEffects.Copy;
+        }
+
+        private void DecryptButton_Click(object sender, EventArgs e)
+        {
+            CryptoCipher.Decrypt("outFile.bmp","decrypted.bmp", (CipherMode)CipherModeBox.SelectedItem);
+            DecryptedPictureBox.Image = CryptoCipher.GetImage("decrypted.bmp");
+        }
+
+        private void CipherModeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            EncryptedPictureBox.Image = null;
+            DecryptedPictureBox.Image = null;
         }
     }
 }

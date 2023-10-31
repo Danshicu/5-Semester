@@ -9,51 +9,47 @@ namespace Laba3
 {
     public static class CryptoCipher
     {
-        public static Image GetImage(byte[] bytes)
+        private static string strIV = "abcdefghijklmnmo"; //The initialization vector.
+        private static string strKey = "abcdefghijklmnmoabcdefghijklmnmo"; //The key
+        public static Image GetImage(string fileName)
         {
             Image img;
-            using (var ms = new MemoryStream(bytes))
-            {
-                ms.Position = 0;
-                ms.Write(bytes, 0, bytes.Length);
-                img = Image.FromStream(ms);
-            }
+            using var ms = new FileStream(fileName, FileMode.Open);
+            img = Image.FromStream(ms);
 
             return img;
             
         }
         
-        public static byte[] MakeEncryption(string inputFile, CipherMode mode, byte[] key, byte[] iv)
+        public static void MakeEncryption(string inputFile, CipherMode mode, byte[] key, byte[] iv)
         {
-            AesCryptoServiceProvider aes = new AesCryptoServiceProvider();
-            aes.BlockSize = 128;
-            aes.KeySize = 256;
-                aes.Key = key;
-                aes.IV = iv;
-                aes.Padding = PaddingMode.None;
-                aes.Mode = mode;
-
-                FileStream fileStream = new FileStream(inputFile, FileMode.Open, FileAccess.Read);
-                MemoryStream ms = new MemoryStream();
-                fileStream.CopyTo(ms);
-
-                var header = ms.ToArray().Take(54).ToArray();
-                var img = ms.ToArray().Skip(54).ToArray();
-                fileStream.Close();
-                var encryptor = aes.CreateEncryptor();
-
-                var encryptedImage = encryptor.TransformFinalBlock(img, 0, img.Length);
-                var newImage = Combine(header, encryptedImage);
-
-                // using (MemoryStream input = new MemoryStream(imageBytes))
-                // using (MemoryStream encrypted = new MemoryStream())
-                // using (CryptoStream cryptoStream = new CryptoStream(encrypted, encryptor, CryptoStreamMode.Write))
-                // {
-                //     input.CopyTo(cryptoStream);
-                //     return encrypted.ToArray();
-                // }
-                File.WriteAllBytes("encryptedFile.bmp", newImage);
-                return newImage;
+            AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+	
+            aesProvider.BlockSize = 128;
+            aesProvider.KeySize = 192;
+            aesProvider.Key = System.Text.Encoding.ASCII.GetBytes(strKey);
+            aesProvider.IV = System.Text.Encoding.ASCII.GetBytes(strIV);
+            aesProvider.Padding = PaddingMode.ISO10126;
+            aesProvider.Mode = mode;
+            //Read
+            FileStream fileStream = new FileStream(inputFile, FileMode.Open, FileAccess.Read);
+            MemoryStream ms = new MemoryStream();
+            fileStream.CopyTo(ms);
+            //Store header in byte array (we will used this after encryption)
+            var img = ms.ToArray();
+            var header = ms.ToArray().Take(54).ToArray();
+            //Take rest from stream
+            var imageArray = ms.ToArray().Skip(54).ToArray();
+            //Create encryptor
+            fileStream.Close();
+            var enc = aesProvider.CreateEncryptor();
+            //Encrypt image
+            var encimg = enc.TransformFinalBlock(imageArray, 0, imageArray.Length);
+            //Combine header and encrypted image
+            var image = Combine(header, encimg);
+            //Write encrypted image to disk
+            File.WriteAllBytes("outFile.bmp", image);
+            aesProvider.Clear();
             
         }
 
@@ -63,6 +59,35 @@ namespace Laba3
             Buffer.BlockCopy(first, 0, ret, 0, first.Length);
             Buffer.BlockCopy(second, 0, ret, first.Length, second.Length);
             return ret;
+        }
+        
+        public static void Decrypt(string inFile, string outFile, CipherMode mode)
+        {
+            AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+            aesProvider.BlockSize = 128;
+            aesProvider.KeySize = 192;
+            aesProvider.Padding = PaddingMode.ISO10126;
+            aesProvider.Mode = mode;
+            aesProvider.Key = System.Text.Encoding.ASCII.GetBytes(strKey);
+            aesProvider.IV = System.Text.Encoding.ASCII.GetBytes(strIV);
+
+	
+            //Read
+            FileStream fileStream = new FileStream(inFile, FileMode.Open, FileAccess.Read);
+            MemoryStream ms = new MemoryStream();
+            fileStream.CopyTo(ms);
+            //Store header in byte array (we will used this after encryption)
+            var header = ms.ToArray().Take(54).ToArray();
+            //Take rest from stream
+            var imageArray = ms.ToArray().Skip(54).ToArray();
+            //Create encryptor
+            var enc = aesProvider.CreateDecryptor();
+            //Encrypt image
+            var encimg = enc.TransformFinalBlock(imageArray, 0, imageArray.Length);
+            //Combine header and encrypted image
+            var image = Combine(header, encimg);
+            //Write encrypted image to disk
+            File.WriteAllBytes(outFile, image);
         }
     }
 }

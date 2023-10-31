@@ -49,6 +49,7 @@
             this.CipherModeBox.Size = new System.Drawing.Size(180, 21);
             this.CipherModeBox.TabIndex = 0;
             this.CipherModeBox.Text = "Cipher mode";
+            this.CipherModeBox.SelectedIndexChanged += new System.EventHandler(this.CipherModeBox_SelectedIndexChanged);
             // 
             // InputPictureBox
             // 
@@ -81,6 +82,7 @@
             this.DecryptButton.TabIndex = 3;
             this.DecryptButton.Text = "Decrypt";
             this.DecryptButton.UseVisualStyleBackColor = true;
+            this.DecryptButton.Click += new System.EventHandler(this.DecryptButton_Click);
             // 
             // DecryptedPictureBox
             // 
